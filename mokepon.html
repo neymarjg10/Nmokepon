@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MOKEPON</title>
+    <script src="./js/apiPokemon.js"></script>
+    <script src="./js/mokepon.js"></script>
+</head>
+
+<body>
+    <h1> MOKEPON!🔥 💧 🌱 </h1>
+
+    <section id="seleccionar mascota">
+        <h2>Elige tu mascota:</h2>
+
+        <label for="hipodoge">Hipodoge</label>
+        <input type="radio" name="mascota" id="hipodoge" />
+
+        <label for="capipepo">capipepo</label>
+        <input type="radio" name="mascota" id="capipepo" />
+
+        <label for="ratigueya">ratigueya</label>
+        <input type="radio" name="mascota" id="ratigueya" />
+
+
+
+
+
+        <button id="boton-mascota">seleccionar</button>
+
+        <!-- <br />
+        <input type="text" id="Busqueda">
+        <button id="boton-pokemon" onclick="data(document.getElementById('Busqueda').value)">Buscar pokemon</button> -->
+
+    </section>
+
+    <section id="seleccionar ataque">
+        <h2>Elige tu ataque:</h2>
+
+        <p>Tu mascotas <span id="mascota-jugador"> </span> tiene <span>3</span> vidas </p>
+        <p>Las mascota <span id="mascota-enemigo"></span> del enemigo tiene <span>3</span> vidas </p>
+
+        <p>
+            <button id="boton-fuego">Fuego 🔥</button>
+            <button id="boton-agua">Agua 💧</button>
+            <button id="boton-tierra">Tierra 🌱</button>
+        </p>
+    </section>
+
+
+    <section id="mensajes"> </section>
+    <p>Tu mascota ataco con FUEGO, las mascotas del enemigo ataco con TIERRA - GANASTE 🎉 🎉 🎉</p>
+    <section id="reiniciar">
+        <Button id="boton-reiniciar">Reiniciar</Button>
+    </SECTION>
+</body>
+
+</html>
