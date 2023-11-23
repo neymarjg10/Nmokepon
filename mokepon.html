@@ -5,27 +5,38 @@
     <meta charset="UTF-8">
     <title>MOKEPON</title>
     <script src="./js/apiPokemon.js"></script>
-    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <h1> MOKEPON!🔥 💧 🌱 </h1>
-
-    <section id="seleccionar mascota">
-        <h2>Elige tu mascota:</h2>
-
-        <label for="hipodoge">Hipodoge</label>
-        <input type="radio" name="mascota" id="hipodoge" />
-
-        <label for="capipepo">capipepo</label>
-        <input type="radio" name="mascota" id="capipepo" />
-
-        <label for="ratigueya">ratigueya</label>
-        <input type="radio" name="mascota" id="ratigueya" />
 
 
+    <section id="seleccionar-Mascota">
+        <h1 class="titulo"> Mokepon </h1>
+        <h2 class="subtitulo">Elige tu mascota:</h2>
 
+        <div class="tarjetas">
 
+            <input type="radio" name="mascota" id="Ratigueya" />
+            <label class="tarjeta-de-mokepon" for="Ratigueya">
+                <p>Ratigueya</p>
+                <img src="./assets/ratigueya.gif" alt="Ratigueya" />
+            </label>
+            
+
+            <input type="radio" name="mascota" id="Hipodoge" />
+            <label class="tarjeta-de-mokepon" for="Hipodoge">
+                <p>Hipodoge</p>
+                <img src="./assets/hipodoge.gif" alt="Hipodoge" />
+            </label>
+            
+            <input type="radio" name="mascota" id="Capipepo" />
+            <label class="tarjeta-de-mokepon" for="Capipepo">
+                <p>Capipepo</p>
+                <img src="./assets/capipepo.gif" alt="Capipepo" />
+            </label>
+
+        </div>
 
         <button id="boton-mascota">seleccionar</button>
 
@@ -35,25 +46,57 @@
 
     </section>
 
-    <section id="seleccionar ataque">
-        <h2>Elige tu ataque:</h2>
+    <section id="seleccionar-ataque">
+        <h1 class="titulo"> Mokepon </h1>
 
-        <p>Tu mascotas <span id="mascota-jugador"> </span> tiene <span>3</span> vidas </p>
-        <p>Las mascota <span id="mascota-enemigo"></span> del enemigo tiene <span>3</span> vidas </p>
+        <h2 class="subtitulo">Elige tu ataque:</h2>
 
-        <p>
-            <button id="boton-fuego">Fuego 🔥</button>
-            <button id="boton-agua">Agua 💧</button>
-            <button id="boton-tierra">Tierra 🌱</button>
-        </p>
+        <div class="tarjetas-ataques">
+            <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+            <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+            <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+         </div>
+
+
+        <section id="mensajes">   
+            <p id="resultado">mucha suerte </p>
+            <section id="Reiniciar">
+                <Button id="boton-reiniciar">Reiniciar</Button>
+            </section>
+
+            </section>
+
+            <p id="resultado"></p>
+
+
+        <div class="ataques">
+
+            <div class="ataques-jugador">
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador"> </p>
+                <div id = "ataques-del-jugador"></div>
+            </div>
+
+
+            <div class="ataques-enemigo">
+                <p id="vidas-enemigo">3</p>
+                <p id="mascota-enemigo"></p>
+                <div id = "ataques-del-enmigo"></div>
+            </div>
+
+
+            <div id = "ataques-del-jugador"></div>
+            <div id = "ataques-del-enmigo"></div>
+            <p>Tu mascotas <span id="mascota-jugador"> </span> tiene <span id="vidas-jugador">3</span> vidas </p>
+            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas
+            </p>
+
+        </div>
+
     </section>
+    
+    <script src="./js/mokepon.js"></script>
 
-
-    <section id="mensajes"> </section>
-    <p>Tu mascota ataco con FUEGO, las mascotas del enemigo ataco con TIERRA - GANASTE 🎉 🎉 🎉</p>
-    <section id="reiniciar">
-        <Button id="boton-reiniciar">Reiniciar</Button>
-    </SECTION>
 </body>
 
 </html>
