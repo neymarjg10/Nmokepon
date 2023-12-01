@@ -150,7 +150,7 @@ function extraerAtaques(mascotaJugador) {
 function mostrarAtaques(ataques) {
    ataques.forEach((ataques) =>{
     ataquesmokepon = 
-    <button id= class= "boton-de-ataque">fuego 🔥</button>
+    `<button id=class="boton-de-ataque">fuego🔥</button>`
    })
 }
 
